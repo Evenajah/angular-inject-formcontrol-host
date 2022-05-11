@@ -1,0 +1,27 @@
+<ng-container [formGroup]="formGroup">
+  <ng-container appMaxRate>
+    <div>
+      <app-example [value]="5"></app-example>
+    </div>
+    <div>
+      <app-example [value]="10"></app-example>
+    </div>
+    <div>
+      <app-example [value]="20"></app-example>
+    </div>
+  </ng-container>
+
+  <ng-container appHalfRate>
+    <div>
+      <app-example [value]="5"></app-example>
+    </div>
+    <div>
+      <app-example [value]="10"></app-example>
+    </div>
+    <div>
+      <app-example [value]="20"></app-example>
+    </div>
+  </ng-container>
+</ng-container>
+
+{{ formGroup.value | json }}
